@@ -1,0 +1,34 @@
+
+package arreglo;
+// ejercicio 5.3
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class mayor {
+
+    public static void main(String[] args) {
+       Scanner entrada=new Scanner(System.in);
+     int arreglo[];
+     arreglo=new int[20];
+     for(int i=0;i<arreglo.length;i++){
+         arreglo[i]=Integer.parseInt(JOptionPane.showInputDialog("Digite el "+i+" elemento del arreglo: "));
+    }
+        for (int i = 0; i < arreglo.length; i++) {
+            System.out.println(arreglo[i]);
+        }
+     int mayor= arreglo[0];
+    
+     int pos=0;
+
+     for (int i = 0; i < arreglo.length; i++) {
+            if(mayor<arreglo[i]){
+                mayor=arreglo[i];
+                pos=i;
+            }
+           
+        }
+        System.out.println("El numero mayor es: "+mayor+" \nse encuentra el la posicion "+pos);
+      
+    }
+    
+}
