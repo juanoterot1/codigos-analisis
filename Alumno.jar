@@ -1,0 +1,31 @@
+//Pregunta 1.21
+package alumno;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class curso {
+
+    public static void main(String[] args) {
+      Scanner entrada= new Scanner(System.in);
+      float nota1, nota2, nota3;
+      float promedio;
+      
+        nota1=Float.parseFloat(JOptionPane.showInputDialog("Ingrese la primer nota: "));
+        nota2=Float.parseFloat(JOptionPane.showInputDialog("Ingrese la segunda nota: "));
+        nota3=Float.parseFloat(JOptionPane.showInputDialog("Ingrese la tercer nota: "));
+        promedio= (nota1+ nota2+nota3)/3;
+        System.out.println("la primer nota es: "+nota1);
+        System.out.println("la segunda nota es: "+nota2);
+        System.out.println("la tercer nota es: "+nota3);
+        System.out.println("El promedio es: "+promedio);
+        
+        if(promedio>=70){
+            System.out.println("Aprobaste");
+        }else{
+            System.out.println("Desaprobaste");
+        }
+        
+    }
+    
+}
