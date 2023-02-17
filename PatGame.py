@@ -73,3 +73,20 @@ while True:
 
     # Actualizamos la pantalla
     pygame.display.flip()
+    
+    
+    
+    
+    """1.Se importa Pygame y se inicializa el módulo.
+2.Se establecen las dimensiones de la ventana y se crea una superficie para la ventana.
+3.Se establece el color de fondo de la ventana y se llena la superficie con ese color.
+4.Se definen las dimensiones de las celdas del juego a partir de las dimensiones de la ventana y el número de celdas que caben en ella.
+5.Se crea una matriz bidimensional de ceros para representar el estado del juego.
+6.Se configuran algunas celdas iniciales para que estén "vivas".
+7.Se inicia el bucle principal del juego.
+8.Se crea una copia del estado actual del juego.
+9.Para cada celda en la pantalla, se calcula el número de vecinos vivos que tiene.
+10.Según las reglas del juego, se actualiza el estado de la celda en la copia del estado del juego.
+11.Se dibuja cada celda en la pantalla según su estado en el nuevo estado del juego.
+12.Se actualiza la ventana con los cambios realizados.
+13.Se repite el proceso en cada iteración del bucle."""
