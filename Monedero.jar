@@ -1,3 +1,12 @@
+*/Determinar si un alumno aprueba a reprueba un curso, sabiendo que aprobara si su promedio de tres
+calificaciones es mayor o igual a 70; reprueba en caso contrario.
+Juan Marmolejo10:57
+Defina una clase 'Monedero' que permita gestionar la cantidad de dinero que una persona dispone en un momento
+dado. La clase deberá tener un constructor que permitirá crear un monedero con una cantidad de dinero inicial y
+deberá definir un método para meter dinero en el monedero, otro para sacarlo y finalmente, otro para consultar el
+disponible; solo podrá conocerse la cantidad de dinero del monedero a través de este último método. Por
+supuesto, no se podrá sacar más dinero del que haya en un monedero/*
+
 class Monedero {
     private int dinero;
 
