@@ -1,0 +1,41 @@
+// ejercicio 2.30
+package Numeros;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class DefinirNum {
+
+    public static void main(String[] args) {
+      Scanner Entrada= new Scanner(System.in);
+      int elementos;
+        elementos=Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad de numeros"));
+      for (int i = 0; i <= elementos; i++) {
+            System.out.println("\nEl numeros es: " +i);
+      if(i%2==0){
+          System.out.println("El "+i+" es multiplo de 2");
+      }else{
+          System.out.println("El "+i+" no es multiplo de 2");
+      }if(i%5==0){
+          System.out.println("El "+i+" es multiplo de 5");
+      }else{
+          System.out.println("El "+i+" no es multiplo de 5");
+      }
+      if(i>100){
+          System.out.println("El "+i+" es mayor que 100");
+      }else{
+          System.out.println("El "+i+" no es mayor que 100");
+      }
+       if(i>10000){
+          System.out.println("El "+i+" es mayor que 10000");
+      }else{
+           System.out.println("El "+i+" es menor que 10000");
+       }
+      }
+      
+     
+        }
+    
+    }
+    
+
