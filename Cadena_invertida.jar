@@ -1,0 +1,27 @@
+// ejercicio 6,1
+package cadena;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class cadenainvertida {
+
+    public static void main(String[] args) {
+              Scanner entrada= new Scanner(System.in);
+       int longitud=0;
+       String cadenaActual;
+       String cadenainvertida="";
+       
+       cadenaActual=JOptionPane.showInputDialog("Digite una cadena");
+       longitud=cadenaActual.length();
+       
+       while(longitud!=0){
+           cadenainvertida+= cadenaActual.substring(longitud-1, longitud);
+           longitud--;
+       }
+         System.out.println("La cadena actual es: "+cadenaActual);
+         System.out.println("La cadena invertida es: "+cadenainvertida);
+    }
+    }
+    
+
