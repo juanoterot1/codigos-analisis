@@ -18,10 +18,8 @@ public class curso {
         nota2=Float.parseFloat(JOptionPane.showInputDialog("Ingrese la segunda nota: "));
         nota3=Float.parseFloat(JOptionPane.showInputDialog("Ingrese la tercer nota: "));
         promedio= (nota1+ nota2+nota3)/3;
-        // muestra en patalla lo ingresado mas el promedio de los datos
-        System.out.println("la primer nota es: "+nota1);
-        System.out.println("la segunda nota es: "+nota2);
-        System.out.println("la tercer nota es: "+nota3);
+        // muestra en patalla el promedio de los datos
+      
         System.out.println("El promedio es: "+promedio);
         // condicion para determinar si el estudiante aprobo o desaprobo
         if(promedio>=70){
