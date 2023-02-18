@@ -13,8 +13,8 @@ def factorial(n):
             fact *= i
         return fact
 
-num = int(input("Ingrese un número entero positivo o cero: "))
-print("El factorial de", num, "es", factorial(num))
+n = int(input("Ingrese un número entero positivo o cero: "))
+print("El factorial de", n, "es", factorial(n))
 
 #Este código hace lo siguiente:
 
