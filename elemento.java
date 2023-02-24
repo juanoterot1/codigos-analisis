@@ -93,33 +93,3 @@ public class Array {
 //A continuación, el programa busca y cuenta la cantidad de veces que aparece cada
 //número en el arreglo y muestra el resultado en la consola. Luego, muestra la hora de inicio y
 //finalización del programa, tambien el tiempo ejecución en milisegundos.
-public static int contElemento(int[] a, int b) {
-int cont = 0;
-for (int i = 0; i < a.length; i++) {
-if (a[i] == b)
-cont++;
-}
-return cont;
-}
-public static boolean encontrarElemento(int[] a, int n, int b) {
-for (int i = 0; i < n; i++) {
-if (a[i] == b) {
-return true;
-}
-}
-return false;
-}
-public static boolean guardarElemento(int[] a, int n, int b) {
-if (n < a.length) {
-a[n] = b;
-return true;
-}
-return false;
-}
-public static void llenarArray(int[] a) {
-Random numero = new Random();
-for (int i = 0; i < a.length; i++) {
-a[i] = numero.nextInt(a.length);
-}
-}
-}
