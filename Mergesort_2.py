@@ -37,17 +37,17 @@ def mergesort(lista):
     # Devolvemos la lista ordenada
     return auxiliar
 
-# Generamos una lista de 10 números aleatorios entre 0 y 99
-lista = [random.randint(0, 99) for i in range(10)]
+# Generamos una lista de 10000 números aleatorios entre 0 y10
+lista = [random.randint(0, 9999) for i in range(10)]
 
 # Imprimimos la lista desordenada
 print("Lista desordenada:")
 print(lista)
 
 # Ordenamos la lista usando mergesort y medimos el tiempo de ejecución
-start_time = time.time()
+start_time = time.perf_counter()
 ordenada = mergesort(lista)
-end_time = time.time()
+end_time = time.perf_counter()
 
 # Imprimimos la lista ordenada y el tiempo de ejecución en milisegundos
 print("Lista ordenada:")
