@@ -69,17 +69,36 @@ for i in range(len(factores_primos)):
         
  // Comentarios
 
-"""Definición de las funciones:
+""" (Juan David Otero) Esta parte del código define una función llamada "encontrar_primos" que recibe como parámetro un número entero positivo "num". Esta función tiene como objetivo encontrar todos los números primos que dividen al número "num".
 
-encontrar_primos(num): Esta función recibe un número entero positivo num y devuelve una lista con los números primos que dividen a num.
-encontrar_factores_primos(num): Esta función recibe un número entero positivo num y devuelve una lista con la factorización prima de num.
-Se le solicita al usuario que ingrese un número entero positivo utilizando la función input(), y se almacena su valor en la variable num.
+Primero, se crea una lista vacía llamada "primos" que será utilizada para almacenar los números primos que dividen a "num".
 
-Se llama a la función encontrar_primos(num) y se almacena su resultado en la variable primos.
+Luego, se utiliza un bucle "while" para dividir sucesivamente el número "num" entre 2 hasta que sea impar. Cada vez que se divide entre 2, se agrega el número primo 2 a la lista "primos" y se actualiza el valor de "num" dividiéndolo entre 2.
 
-Se imprime la lista de números primos que dividen a num utilizando la función print().
+Después, se utiliza un bucle "for" que va desde 3 hasta la raíz cuadrada de "num" (inclusive) en incrementos de 2. Dentro de este bucle, se utiliza otro bucle "while" para dividir sucesivamente el número "num" por cada número impar que sea primo. Cada vez que se encuentra un número primo que divide a "num", se agrega a la lista "primos" y se actualiza el valor de "num" dividiéndolo por el número primo encontrado.
 
-Se llama a la función encontrar_factores_primos(num) y se almacena su resultado en la variable factores_primos.
+Finalmente, si el número "num" que queda es mayor que 2, entonces también es un número primo y se agrega a la lista "primos".
 
-Se imprime la factorización prima del número num utilizando la función print(). Para ello, se recorre la lista factores_primos con un bucle for e imprime cada elemento con un asterisco * entre ellos, excepto el último elemento que se imprime sin el asterisco. Esto se logra mediante el uso de un condicional if y la función end de print()."""
+La función retorna la lista "primos" con todos los números primos que dividen al número "num".
+
+-----------------------------------------------------------------------------------
+
+(Andres Felipe Vivas) Esta función encontrar_factores_primos también utiliza la estrategia de división sucesiva para encontrar los factores primos del número num. Primero, se crea una lista vacía factores_primos donde se almacenarán los factores primos encontrados.
+
+Luego, al igual que en la función encontrar_primos, se divide num por 2 hasta que sea impar. Después, se itera desde 3 hasta la raíz cuadrada de num en pasos de 2, buscando números que sean divisores de num. Si se encuentra un divisor, se agrega a la lista factores_primos y se actualiza num dividiéndolo por el divisor encontrado.
+
+Finalmente, si num es mayor que 2, entonces es un número primo y se agrega a la lista factores_primos. La función retorna la lista factores_primos que contiene los factores primos del número num.
+
+-----------------------------------------------------------------------------------
+
+(Juan Manuel Marmolejo) En esta parte del código, se le pide al usuario que ingrese un número entero positivo utilizando la función input() y se almacena en la variable num.
+
+Luego, se llama a la función encontrar_primos(num) para encontrar los números primos que dividen a num y se almacenan en la variable primos.
+
+A continuación, se imprime en la consola la lista de números primos que dividen a num mediante la función print().
+
+Luego, se llama a la función encontrar_factores_primos(num) para encontrar la factorización prima del número num y se almacena en la variable factores_primos.
+
+Finalmente, se imprime en la consola la factorización prima de num utilizando un ciclo for y la función print(), donde se recorre cada elemento de la lista factores_primos y se imprime junto con un asterisco como separador. Si es el último elemento, se imprime sin el asterisco y se agrega un salto de línea al final.
+"""
 
